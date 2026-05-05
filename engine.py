@@ -1,6 +1,10 @@
 import pandas as pd
 from cards import CHANCE_CARDS, SITUATION_CARDS
 
+
+# 4a not carrying forward, points next round, inventory next round, if last round then minus points but no inventory and no demand met.
+
+
 class Player:
     def __init__(self, name):
         self.name = name
@@ -71,7 +75,7 @@ class SupplyChainLab:
         unmet = adj_demand - fulfilled
         if unmet > 0:
             # Increment the player's total unmet demands tally
-            player.unmet_demands += unmet 
+            # player.unmet_demands += unmet 
             
             # Check if Chance Card 5 was drawn this turn
             if c.get("special") == "no_penalty":
