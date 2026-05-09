@@ -67,7 +67,7 @@ else:
             "**1.** If unable to buy full demand but has inventory, do **'partial'** action.\n\n"
             "**2.** If want to use stock instead of buy and stock is enough to meet full demand, do **'none'** action.\n\n"
             "**3.** Situation 6 (**MUST**) overrides choices and auto-spends capital.\n\n"
-            "**4.** Chance Card 5 overrides all situations, including situation 6. It (**MUST**) be used the same round."
+            "**4.** Chance Card 5 overrides all situations, including situation 6. Current logic allows carry forward to next rounds. Scorekeeper decides if allowed or must use in same round."
         )
 
     # --- MAIN AREA: TURN RESOLUTION ---
