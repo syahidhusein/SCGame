@@ -6,7 +6,7 @@ game = SupplyChainLab([n.strip() for n in names])
 for r in range(1, 7):
     print(f"\n--- ROUND {r} ---")
     for player in game.players:
-        print(f"\nTurn: {player.name} (Cap: ${player.capital}M, Pts: {player.points})")
+        print(f"\nTurn: {player.name} (Cap: ${player.capital}M, Pts: {player.points}), Inv: {player.inventory}, Demands Met : {player.demands_met}")
         c_id = int(input("Chance Card # (1-10): "))
         s_id = int(input("Situation Card # (1-6): "))
         s_type = input("Situation A or B? ").upper()
